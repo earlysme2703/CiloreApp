@@ -23,13 +23,14 @@ class _DashboardScreenState extends State<DashboardScreen> {
       backgroundColor: const Color(0xFFF4E3CF), // Warna krem
       body: Column(
         children: [
+          // AppBar dengan "Cilore"
           buildAppBar(),
           Expanded(
             child: Center(
               child: Text(
                 'Page ${selectedPage + 1}',
                 style: const TextStyle(
-                  fontSize: 18,
+                  fontSize: 24,
                   color: Color(0xFF6B4E3D),
                   fontWeight: FontWeight.bold,
                 ),
@@ -46,7 +47,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 children: [
                   Container(
                     padding: const EdgeInsets.symmetric(
-                        horizontal: 40, vertical: 25),
+                        horizontal: 40, vertical: 18),
                     decoration: BoxDecoration(
                       color: const Color(0xFF6B4E3D), // Warna coklat
                       borderRadius: BorderRadius.circular(10),
@@ -63,10 +64,10 @@ class _DashboardScreenState extends State<DashboardScreen> {
                           },
                           child: Icon(
                             icons[index],
-                            size: 40,
+                            size: 36,
                             color: selectedPage == index
                                 ? Colors.white
-                                : Colors.white.withOpacity(0.10),
+                                : Colors.white.withOpacity(0.4),
                           ),
                         ),
                       ),
@@ -88,7 +89,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Container(
       height: 120,
       decoration: BoxDecoration(
-        color: const Color(0xFFF4E3CF),
+        color: Colors.white,
         borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(25),
           bottomRight: Radius.circular(25),
