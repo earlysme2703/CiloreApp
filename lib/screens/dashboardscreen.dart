@@ -28,7 +28,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           Expanded(
             child: Center(
               child: Text(
-                'Page ${selectedPage + 1}',
+                'Ini halaman ${selectedPage + 1}',
                 style: const TextStyle(
                   fontSize: 24,
                   color: Color(0xFF6B4E3D),
@@ -87,9 +87,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   Widget buildAppBar() {
     return Container(
-      height: 120,
+      height: 100,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: const Color(0xFFF4E3CF),
         borderRadius: const BorderRadius.only(
           bottomLeft: Radius.circular(25),
           bottomRight: Radius.circular(25),
@@ -106,7 +106,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
       child: SafeArea(
         child: Center(
           child: Padding(
-            padding: const EdgeInsets.only(top: 20, left: 15, right: 15),
+            padding: const EdgeInsets.only(top:15, left: 15, right: 15),
             child: buildSearchButton(),
           ),
         ),
